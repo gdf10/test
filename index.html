@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bar">
+        <b>gadgetBox</b>
+        <input id="q" type="search" placeholder="Поиск товаров..." aria-label="Поиск">
+        <button id="cart-btn">Корзина <span id='count'>0</span></button>
+    </header>
+    <div class="tools">
+        <div id="cats" class="cats"></div>
+        <select id="sort" aria-label="Сортировка">
+            <option value="def">По умолчанию</option>
+            <option value="asc">Сначала дешевые</option>
+            <option value="desc">Сначала дорогие</option>
+            <option value="rate">По рейтингу</option>
+        </select>
+    </div>
+    <main id="list" class="list"></main>
+    <aside id="drawer" class="drawer" aria-label="Корзина">
+        <div class="dhead"><h2>Корзина</h2><button id="close" aria-label="Закрыть">x</button></div>
+        <ul id="items"></ul>
+        <p class="sum">Итого: <b id='sum'>0$</b></p>
+        <button id="clear" class="ghost">Очистить</button>
+    </aside>
+</body>
+<script src="script.js"></script>
+</html>
